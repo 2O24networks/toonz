@@ -21,9 +21,10 @@ body {
 
 <body>
 <script>
-	let player = ruffle.createPlayer();
-player.ruffle().config = {
-    autoplay: "on",
+	window.RufflePlayer = window.RufflePlayer || {};
+	window.RufflePlayer.config = {
+		"autoplay": "on",
+		"splashScreen": false,
 };
 </script>
 	<script src="sources/ruffle.js"></script>
