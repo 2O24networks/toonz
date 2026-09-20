@@ -20,22 +20,13 @@ body {
 </head>
 
 <body>
-	<script>
-    window.RufflePlayer = window.RufflePlayer || {};
-    window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
-        container.appendChild(player);
-		
-		
-		let player = ruffle.createPlayer();
+<script>
+	let player = ruffle.createPlayer();
 player.ruffle().config = {
     autoplay: "on",
-		
-    });
+};
 </script>
-<script src="sources/ruffle.js"></script>
+	<script src="sources/ruffle.js"></script>
 <table height="768" align="center">
 <th>
   
